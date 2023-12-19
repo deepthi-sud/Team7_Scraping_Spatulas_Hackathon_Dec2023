@@ -168,7 +168,7 @@ public class TC_002_HypoThyroidism extends BaseClass {
 												}
 											}
 										System.out.println("********************************************************");
-										System.out.println(j+" : Recipe name: " +Recipe_name);
+										System.out.println(j+": Recipe name: " +Recipe_name);
 										System.out.println(recipe_url);
 										String recipeID= recipe_url.replaceAll("[^0-9]", "").toString();
 										System.out.println("Recipe ID: "+ recipeID);

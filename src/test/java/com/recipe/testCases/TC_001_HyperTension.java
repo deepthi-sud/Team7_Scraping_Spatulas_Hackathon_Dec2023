@@ -161,7 +161,7 @@ public class TC_001_HyperTension extends BaseClass {
 									String nutrientVal = "";
 									String allergy_name = "";
 									String CookTime = "";
-									String prepTime = " ";
+									String prepTime = "";
 
 									System.out.println("********************************************************");
 									System.out.println("Recipe name: " +Recipe_name);
@@ -215,12 +215,12 @@ public class TC_001_HyperTension extends BaseClass {
 
 										prepTime = driver.findElement(By.xpath("//time[@itemprop = 'prepTime']")).getText();
 										System.out.println("Preparation Time: "+prepTime);
-										xlutil.setCellData("HYPERTENSION", i, 4, PrepTime);
+										xlutil.setCellData("HYPERTENSION", i, 4, prepTime);
 									}
 									catch(NoSuchElementException e)
 									{
 										prepTime = "";
-										xlutil.setCellData("HYPERTENSION", i, 4, PrepTime);
+										xlutil.setCellData("HYPERTENSION", i, 4, prepTime);
 									}
 									try {
 
