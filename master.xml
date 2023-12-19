@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <parameter name="browser" value="chrome"/>
+	<classes>
+	<!--  <class name="com.recipe.testCases.TC_001_HyperTension"/>-->
+	<class name="com.recipe.testCases.TC_002_HypoThyroidism"/>
+	<!--<class name="com.recipe.testCases.TC_003_Diabetes"/>-->
+	<!--<class name="com.recipe.testCases.TC_004_PCOS"/>-->
+	
+	</classes>
+  	
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
