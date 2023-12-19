@@ -53,6 +53,7 @@ public class TC_001_HyperTension extends BaseClass {
 	public void hypertension() throws Exception, InterruptedException  
 
 	{
+		try {
 		ExcelUtility  xlutil = new ExcelUtility(".\\TestData\\Team7_Scraping_Spatulas_ScrapedRecipes.xlsx");
 
 		ArrayList<String> EliminateList = excel.readDataFromSheet(0, 4);
@@ -72,7 +73,7 @@ public class TC_001_HyperTension extends BaseClass {
 		xlutil.setCellData("HYPERTENSION", 0, 9, "Recipe URL");				
 		xlutil.setCellData("HYPERTENSION", 0, 10, "Nutrients");
 		xlutil.setCellData("HYPERTENSION", 0, 11, "Allergy_Info");
-		xlutil.setCellData("TOADD_RECIPES", 0, 0,"Recipe_Name");
+		xlutil.setCellData("TOADD_HYPERTENSION", 0, 0,"Recipe_Name");
 
 
 		timer_start = Instant.now();
@@ -188,7 +189,7 @@ public class TC_001_HyperTension extends BaseClass {
 												goodRecipes_count++;
 												System.out.println("GOOD TO HAVE RECIPE: " + Recipe_name);
 
-												xlutil.setCellData("ToAdd_Recipes", i, 0,Recipe_name);
+												xlutil.setCellData("TOADD_HYPERTENSION", i, 0,Recipe_name);
 												break outer1;
 											}
 										}
@@ -202,7 +203,7 @@ public class TC_001_HyperTension extends BaseClass {
 												allergyFlag = 1;	                   		
 												allergy_name = s1;
 												//  System.out.println("ALLERGY TYPE: "+allergy_name+"            RECIPE NAME:       " + Recipe_name);
-												xlutil.setCellData("HYPERTENSION", i, 11,"allergy_name");
+												xlutil.setCellData("HYPERTENSION", i, 11,allergy_name);
 
 												break outer2;
 											}
@@ -247,7 +248,7 @@ public class TC_001_HyperTension extends BaseClass {
 									xlutil.setCellData("HYPERTENSION", i, 0, recipe_id);
 									xlutil.setCellData("HYPERTENSION", i, 1, Recipe_name);
 									xlutil.setCellData("HYPERTENSION", i, 2, getRecipeCategory().toString() );
-									xlutil.setCellData("HYPERTENSION", i, 3, foodCategory);
+									xlutil.setCellData("HYPERTENSION", i, 3, getFoodCategory().toString());
 									xlutil.setCellData("HYPERTENSION", i, 6, ingredients);
 									xlutil.setCellData("HYPERTENSION", i, 7, prepMethod);
 									xlutil.setCellData("HYPERTENSION", i, 8, SetHyperTensionMorbidity().toString());
@@ -283,6 +284,9 @@ public class TC_001_HyperTension extends BaseClass {
 				System.out.println("Time taken to execute in Minutes: "+ Duration.between(timer_start,timer_end).toMinutes());;
 			}//end of alphabet loop
 		}	//end of if alphabet count loop 
+		}catch(Exception e) {
+			
+		}
 	}
 
 

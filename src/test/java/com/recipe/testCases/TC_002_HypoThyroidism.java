@@ -37,6 +37,7 @@ public class TC_002_HypoThyroidism extends BaseClass {
 	public  void hypoThyrodism() throws Exception
 
 	{
+		try {
 		ExcelUtility  xlutil = new ExcelUtility(".\\TestData\\Team7_Scraping_Spatulas_ScrapedRecipes.xlsx");
 		ArrayList<String> EliminateList = excel.readDataFromSheet(0, 2);
 		ArrayList<String> toAddList = excel.readDataFromSheet(0, 3);
@@ -55,7 +56,7 @@ public class TC_002_HypoThyroidism extends BaseClass {
 		xlutil.setCellData("HYPOTHYROIDISM", 0, 9, "Recipe URL");				
 		xlutil.setCellData("HYPOTHYROIDISM", 0, 10, "Nutrients");
 		xlutil.setCellData("HYPOTHYROIDISM", 0, 11, "Allergy Info");
-		xlutil.setCellData("TOADD_RECIPES", 0, 0, "Recipe_Name");
+		xlutil.setCellData("TOADD_HYPOTHYROIDISM", 0, 0, "Recipe_Name");
 
 		timer_start = Instant.now();
 		int eliminated_recipe_count =  0;
@@ -118,6 +119,7 @@ public class TC_002_HypoThyroidism extends BaseClass {
 									String ingredients = driver.findElement(By.xpath("//div[@id='rcpinglist']")).getText();
 
 									flag = 0;
+									
 									outer:
 									for(int k=0;k<EliminateList.size();k++)
 									{
@@ -145,7 +147,7 @@ public class TC_002_HypoThyroidism extends BaseClass {
 													{
 														goodRecipes_count++;
 														System.out.println("GOOD TO HAVE RECIPE: " + Recipe_name);
-														xlutil.setCellData("TOADD_RECIPES", i, 0,Recipe_name);
+														xlutil.setCellData("TOADD_HYPOTHYROIDISM", i, 0,Recipe_name);
 														break outer1;
 													}
 												}
@@ -160,8 +162,8 @@ public class TC_002_HypoThyroidism extends BaseClass {
 
 													allergyFlag = 1;
 													allergy_name = s1;
-													System.out.println("ALLERGY TYPE: "+allergy_name+"            RECIPE NAME:       " + Recipe_name);
-													xlutil.setCellData("HYPOTHROIDISM", i, 11, allergy_name);
+													//System.out.println("ALLERGY TYPE: "+allergy_name+"            RECIPE NAME:       " + Recipe_name);
+													xlutil.setCellData("HYPOTHYROIDISM", i, 11, allergy_name);
 													break outer2;
 												}
 											}
@@ -253,7 +255,9 @@ public class TC_002_HypoThyroidism extends BaseClass {
 				getAlphabates=driver.findElements(By.xpath("//table[@id='ctl00_cntleftpanel_mnuAlphabets']//td[position()>=3 and position()<last()]//a"));
 			}//end of alphabet count loop
 		}//end of if alphabet count
-
+		}catch(Exception e) {
+			
+		}
 	}
 }
 

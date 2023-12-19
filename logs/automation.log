@@ -1,3 +1,80 @@
-19:31:40.741 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - read app url
-19:31:40.866 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - window maximized
-19:31:46.324 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - clicked on Recipe A to Z
+20:11:10.399 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - read app url
+20:11:10.519 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - window maximized
+20:11:16.651 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - clicked on Recipe A to Z
+20:57:33.010 [main] INFO  com.recipe.testCases.TC_003_Diabetes - read app url
+20:57:33.127 [main] INFO  com.recipe.testCases.TC_003_Diabetes - window maximized
+20:57:38.170 [main] INFO  com.recipe.testCases.TC_003_Diabetes - clicked on Recipe A to Z
+21:11:14.212 [main] INFO  com.recipe.testCases.TC_004_PCOS - read app url
+21:11:14.322 [main] INFO  com.recipe.testCases.TC_004_PCOS - window maximized
+21:11:20.006 [main] INFO  com.recipe.testCases.TC_004_PCOS - clicked on Recipe A to Z
+22:44:27.142 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - read app url
+22:44:27.263 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - window maximized
+22:44:36.681 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - clicked on Recipe A to Z
+22:59:18.267 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - read app url
+22:59:18.397 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - window maximized
+22:59:39.518 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - read app url
+22:59:39.636 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - window maximized
+22:59:51.822 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - clicked on Recipe A to Z
+23:04:02.161 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - read app url
+23:04:02.292 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - window maximized
+23:04:09.849 [main] INFO  com.recipe.testCases.TC_002_HypoThyroidism - clicked on Recipe A to Z
+23:09:15.449 [main] INFO  com.recipe.testCases.TC_003_Diabetes - read app url
+23:09:15.563 [main] INFO  com.recipe.testCases.TC_003_Diabetes - window maximized
+23:09:26.388 [main] INFO  com.recipe.testCases.TC_003_Diabetes - clicked on Recipe A to Z
+23:12:26.066 [main] INFO  com.recipe.testCases.TC_001_HyperTension - read app url
+23:12:26.192 [main] INFO  com.recipe.testCases.TC_001_HyperTension - window maximized
+23:12:34.834 [main] INFO  com.recipe.testCases.TC_001_HyperTension - clicked on Recipe A to Z
+23:13:12.191 [main] INFO  com.recipe.testCases.TC_001_HyperTension - https://www.tarladalal.com/RecipeAtoZ.aspx?beginswith=A&pageindex=1
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='rcpnutrients']"}
+  (Session info: chrome-headless-shell=120.0.6099.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2985f8e620ad0a81736086db368ffe5, findElement {using=xpath, value=//table[@id='rcpnutrients']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Deepthi\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49885/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2985f8e620ad0a81736086db368ffe5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360) ~[selenium-remote-driver-4.16.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354) ~[selenium-remote-driver-4.16.1.jar:?]
+	at com.recipe.testCases.TC_001_HyperTension.hypertension(TC_001_HyperTension.java:238) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) [testng-remote.jar:?]
+23:17:55.270 [main] INFO  com.recipe.testCases.TC_004_PCOS - read app url
+23:17:55.392 [main] INFO  com.recipe.testCases.TC_004_PCOS - window maximized
+23:18:03.823 [main] INFO  com.recipe.testCases.TC_004_PCOS - clicked on Recipe A to Z

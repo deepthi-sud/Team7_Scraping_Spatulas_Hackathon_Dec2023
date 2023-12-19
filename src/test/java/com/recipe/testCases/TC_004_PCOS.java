@@ -55,7 +55,7 @@ public class TC_004_PCOS extends BaseClass{
 					xlutil.setCellData("PCOS", 0, 9, "Recipe URL");				
 					xlutil.setCellData("PCOS", 0, 10, "Nutrients");
 					xlutil.setCellData("PCOS", 0, 11, "Allergy Info");
-					xlutil.setCellData("TOADD_RECIPES", 0, 0, "Recipe_Name");
+					xlutil.setCellData("ToAddPCOS", 0, 0, "Recipe_Name");
 								
 			timer_start = Instant.now();
 			int eliminated_recipe_count =  0;
@@ -142,7 +142,7 @@ public class TC_004_PCOS extends BaseClass{
 	 	    				{
 	 	    					goodRecipes_count++;
 	 	    					System.out.println("GOOD TO HAVE RECIPE: " + Recipe_name);
-	 	    					xlutil.setCellData("TOADD_RECIPES", i, 0,Recipe_name);
+	 	    					xlutil.setCellData("ToAddPCOS", i, 0,Recipe_name);
 	 	    					break outer1;
 	 	    				}
 	 	    			}
